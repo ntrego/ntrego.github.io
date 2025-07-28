@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Travel Adventures</title>
+    <!-- Tailwind CSS CDN for utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for a modern and clean look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS for Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #a7d9f7; /* Lighter blue */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #60a5fa; /* Tailwind blue-400 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-blue-700 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <!-- Logo/Site Title -->
+            <a href="#" class="text-3xl font-bold tracking-tight mb-4 md:mb-0">
+                <span class="text-blue-200">Student</span> <span class="text-white">Travels</span>
+            </a>
+
+            <!-- Navigation -->
+            <nav>
+                <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-lg font-medium">
+                    <li><a href="#" class="hover:text-blue-200 transition-colors duration-300 rounded-md px-3 py-2">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-200 transition-colors duration-300 rounded-md px-3 py-2">Blog</a></li>
+                    <li><a href="#" class="hover:text-blue-200 transition-colors duration-300 rounded-md px-3 py-2">Destinations</a></li>
+                    <li><a href="#" class="hover:text-blue-200 transition-colors duration-300 rounded-md px-3 py-2">About Us</a></li>
+                    <li><a href="#" class="hover:text-blue-200 transition-colors duration-300 rounded-3xl px-3 py-2 border-2 border-blue-200">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 md:py-32 overflow-hidden">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg">
+                Explore the World, One Student Trip at a Time
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90">
+                Unforgettable adventures, cultural immersion, and learning experiences for students.
+            </p>
+            <a href="#" class="inline-block bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-100 hover:scale-105 transition-all duration-300 transform">
+                Start Your Journey
+            </a>
+        </div>
+        <!-- Background elements for visual appeal -->
+        <div class="absolute top-0 left-0 w-full h-full">
+            <div class="absolute w-64 h-64 bg-blue-500 opacity-20 rounded-full -top-16 -left-16 blur-3xl"></div>
+            <div class="absolute w-96 h-96 bg-blue-400 opacity-15 rounded-full -bottom-32 -right-32 blur-3xl"></div>
+        </div>
+    </section>
+
+    <!-- Main Content Area - Blog Posts Grid -->
+    <main class="container mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold text-center text-blue-800 mb-12">Latest Student Adventures</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Blog Post Card 1 -->
+            <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                <img src="https://placehold.co/600x400/60A5FA/FFFFFF?text=Paris+Adventure" alt="Students in Paris" class="w-full h-56 object-cover rounded-t-xl">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">A Week of Discovery in Paris</h3>
+                    <p class="text-gray-600 text-sm mb-4">Published on July 25, 2025</p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        From the Eiffel Tower to the Louvre, our students immersed themselves in Parisian culture and history.
+                        Discover their favorite moments and tips for navigating the city of lights.
+                    </p>
+                    <a href="#" class="inline-block bg-blue-600 text-white py-2 px-5 rounded-full hover:bg-blue-700 transition-colors duration-300 text-sm font-medium">
+                        Read More
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog Post Card 2 -->
+            <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=Costa+Rica+Eco-Tour" alt="Students in Costa Rica rainforest" class="w-full h-56 object-cover rounded-t-xl">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Eco-Tourism in Costa Rica</h3>
+                    <p class="text-gray-600 text-sm mb-4">Published on July 18, 2025</p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Our latest group explored the vibrant biodiversity of Costa Rica, participating in conservation efforts and zip-lining through rainforests.
+                    </p>
+                    <a href="#" class="inline-block bg-blue-600 text-white py-2 px-5 rounded-full hover:bg-blue-700 transition-colors duration-300 text-sm font-medium">
+                        Read More
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog Post Card 3 -->
+            <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                <img src="https://placehold.co/600x400/2563EB/FFFFFF?text=Rome+History+Tour" alt="Students at Roman Colosseum" class="w-full h-56 object-cover rounded-t-xl">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Tracing History in Ancient Rome</h3>
+                    <p class="text-gray-600 text-sm mb-4">Published on July 10, 2025</p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        A journey back in time to the heart of the Roman Empire. Students walked through ancient ruins and learned about gladiators and emperors.
+                    </p>
+                    <a href="#" class="inline-block bg-blue-600 text-white py-2 px-5 rounded-full hover:bg-blue-700 transition-colors duration-300 text-sm font-medium">
+                        Read More
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog Post Card 4 -->
+            <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                <img src="https://placehold.co/600x400/1D4ED8/FFFFFF?text=Japan+Cultural+Exchange" alt="Students in Japan" class="w-full h-56 object-cover rounded-t-xl">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Cultural Exchange in Japan</h3>
+                    <p class="text-gray-600 text-sm mb-4">Published on July 03, 2025</p>
+                    <p class="text-700 mb-6 leading-relaxed">
+                        Our students experienced the rich traditions and modern marvels of Japan, from tea ceremonies to bustling Tokyo streets.
+                    </p>
+                    <a href="#" class="inline-block bg-blue-600 text-white py-2 px-5 rounded-full hover:bg-blue-700 transition-colors duration-300 text-sm font-medium">
+                        Read More
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog Post Card 5 -->
+            <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                <img src="https://placehold.co/600x400/1E3A8A/FFFFFF?text=NYC+Art+Tour" alt="Students in New York City" class="w-full h-56 object-cover rounded-t-xl">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">NYC: A Canvas of Art & Innovation</h3>
+                    <p class="text-gray-600 text-sm mb-4">Published on June 26, 2025</p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Exploring the vibrant art scene and innovative spirit of New York City, from Broadway to the Met.
+                    </p>
+                    <a href="#" class="inline-block bg-blue-600 text-white py-2 px-5 rounded-full hover:bg-blue-700 transition-colors duration-300 text-sm font-medium">
+                        Read More
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog Post Card 6 -->
+            <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                <img src="https://placehold.co/600x400/1C3A7A/FFFFFF?text=Andes+Trekking" alt="Students trekking in Andes" class="w-full h-56 object-cover rounded-t-xl">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Trekking the Majestic Andes</h3>
+                    <p class="text-gray-600 text-sm mb-4">Published on June 19, 2025</p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        An exhilarating journey through the stunning landscapes of the Andes, focusing on geography and local cultures.
+                    </p>
+                    <a href="#" class="inline-block bg-blue-600 text-white py-2 px-5 rounded-full hover:bg-blue-700 transition-colors duration-300 text-sm font-medium">
+                        Read More
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Call to Action Section -->
+    <section class="bg-blue-100 py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-6">Ready for Your Next Adventure?</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                Join our mailing list to receive updates on new student travel programs, exclusive discounts, and inspiring stories from the road.
+            </p>
+            <form class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-xl mx-auto">
+                <input type="email" placeholder="Enter your email address" class="w-full sm:w-2/3 p-3 rounded-full border-2 border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-700" aria-label="Email address for newsletter">
+                <button type="submit" class="w-full sm:w-1/3 bg-blue-600 text-white py-3 px-6 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300 shadow-md">
+                    Subscribe Now
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-800 text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div class="mb-4 md:mb-0">
+                    <h4 class="text-2xl font-bold mb-2">Student Travels</h4>
+                    <p class="text-blue-200 text-sm">Empowering students through global experiences.</p>
+                </div>
+                <nav>
+                    <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-md">
+                        <li><a href="#" class="hover:text-blue-200 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-blue-200 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-blue-200 transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="border-t border-blue-700 pt-6 text-sm text-blue-200">
+                &copy; 2025 Student Travels. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
